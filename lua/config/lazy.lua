@@ -18,6 +18,10 @@ require("lazy").setup({
   spec = {
     -- add LazyVim and import its plugins
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
+    -- IMPORT EXTRAS HERE:
+    { import = "lazyvim.plugins.extras.lang.typescript" }, -- TS/JS/React support
+    { import = "lazyvim.plugins.extras.lang.json" }, -- Config files
+    { import = "lazyvim.plugins.extras.lang.typescript.biome" }, -- Biome integration
     -- import/override with your plugins
     { import = "plugins" },
   },
