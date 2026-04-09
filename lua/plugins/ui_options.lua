@@ -38,10 +38,18 @@ return {
     opts = {
       completion = {
         menu = {
-          auto_show = false, -- Disables the automatic dropdown menu
+          -- 1. This allows the dropdown menu to pop up automatically as you type
+          auto_show = true,
         },
         ghost_text = {
-          enabled = false, -- Disables the inline auto-suggest gray text
+          -- 2. This keeps the "gray text" preview ahead of your cursor disabled
+          enabled = false,
+        },
+        accept = {
+          auto_brackets = {
+            -- 3. This ensures it doesn't add () or arguments automatically
+            enabled = false,
+          },
         },
       },
     },
