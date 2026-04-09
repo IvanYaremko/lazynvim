@@ -36,8 +36,13 @@ return {
   {
     "saghen/blink.cmp",
     opts = {
-      signature = {
-        enabled = false,
+      completion = {
+        menu = {
+          auto_show = false, -- Disables the automatic dropdown menu
+        },
+        ghost_text = {
+          enabled = false, -- Disables the inline auto-suggest gray text
+        },
       },
     },
   },
