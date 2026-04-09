@@ -54,4 +54,24 @@ return {
       },
     },
   },
+  -- Auto-close/rename HTML tags using Treesitter
+  {
+    "windwp/nvim-ts-autotag",
+    opts = {},
+  },
+
+  -- Preview CSS colors
+  {
+    "NvChad/nvim-colorizer.lua",
+    opts = {
+      user_default_options = {
+        names = false, -- "Red" won't highlight, but #ff0000 will
+        mode = "background",
+      },
+    },
+  },
+  {
+    "olrtg/emmet-language-server",
+    -- This hooks into LSP so it shows up in your completion menu
+  },
 }

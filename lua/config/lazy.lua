@@ -22,6 +22,7 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.typescript" }, -- TS/JS/React support
     { import = "lazyvim.plugins.extras.lang.json" }, -- Config files
     { import = "lazyvim.plugins.extras.lang.typescript.biome" }, -- Biome integration
+    { import = "lazyvim.plugins.extras.lang.go" },
     -- import/override with your plugins
     { import = "plugins" },
   },
