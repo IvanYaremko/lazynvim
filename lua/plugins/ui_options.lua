@@ -15,7 +15,10 @@ return {
       -- This correctly disables animations and smooth scroll on startup
       animate = { enabled = false },
       scroll = { enabled = false },
-      indent = { enabled = true },
+      indent = {
+        enabled = true,
+        animate = { enabled = false },
+      },
     },
   },
   {
