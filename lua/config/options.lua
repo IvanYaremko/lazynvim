@@ -12,3 +12,4 @@ vim.g.clipboard = {
     ["*"] = require("vim.ui.clipboard.osc52").paste("*"),
   },
 }
+vim.diagnostic.enable(false)
